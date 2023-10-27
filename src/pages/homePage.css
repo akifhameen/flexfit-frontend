@@ -1,0 +1,6 @@
+.app__heroBanner{
+    background-image:url(../assets/images/background.jpg);
+    background-size: cover;
+    width:100%;
+    height:35rem;  
+}

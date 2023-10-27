@@ -1,0 +1,44 @@
+.nav__main-div{
+    padding-left: 6rem;
+    padding-right:6rem;
+    padding-top:1rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__name-p1{
+    color:#D76810;
+    font-size:2rem;
+    font-family: "DM Sans";
+    font-weight: bold;
+}
+.nav__navigation ul {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "DM Sans";
+}
+.nav__navigation li {
+    list-style-type: none;
+    padding-left:1rem;
+    padding-right:1rem;
+    font-size:1rem;
+    
+}
+.nav__navigation a {
+    text-decoration: none;
+}
+
+.nav__navigation li:hover{
+    color: #D76810;
+}
+.nav__form-btn button{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    margin-right:0.6rem;
+    color: white;
+    background-color: #D76810;
+    border: none;
+}
