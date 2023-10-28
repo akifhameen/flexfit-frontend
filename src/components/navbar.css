@@ -1,6 +1,6 @@
 .nav__main-div{
-    padding-left: 6rem;
-    padding-right:6rem;
+    padding-left: 10rem;
+    padding-right:10rem;
     padding-top:1rem;
     display:flex;
     justify-content: space-between;
@@ -8,7 +8,7 @@
 }
 .nav__name-p1{
     color:#D76810;
-    font-size:2rem;
+    font-size:2.5rem;
     font-family: "DM Sans";
     font-weight: bold;
 }

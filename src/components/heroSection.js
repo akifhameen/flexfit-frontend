@@ -19,9 +19,10 @@ const HeroSection = () => {
         <div class="hero__first-div">
             <p class="p1">Wellcome to FlexFit</p>
             <p class="p2">The Most Complete Gym To Work Out</p>
-            <p class="p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Utenimad minim veniam.</p>
-            <div>
-
+            <p class="p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Utenimad minim veniam dipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Utenimad minim veniam.</p>
+            <div class="hero__btn">
+                <button>About Us</button>
+                <a href='#'>Learn more</a>
             </div>
         </div>
         <div class='hero__image-div'>

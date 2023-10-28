@@ -1,0 +1,58 @@
+/* .gym__main-div{
+    padding-left: 10rem;
+    padding-right:10rem;
+} */
+.gym__details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:-5rem;
+    
+}
+.gym__details-card{
+    border-color: black;
+    border-width:2px;
+    box-sizing: border-box;
+    padding:2rem;
+    width:50rem;
+    height: auto;
+    margin-top:1rem;
+    border-style: solid;
+    margin-right:1.5rem;
+    background-color: white;
+
+}
+
+.gym_-details-card-first-div{
+    display: flex;
+    align-items: center;
+}
+.gym_-details-card-first-div img{
+    width:2.5rem;
+    height:2.5rem;
+}
+.gym_-details-card-first-div p{
+    /* color:#D76810; */
+    font-size:1.8rem;
+    font-family:"DM Sans";
+    font-weight: bold;
+    padding-left:1.2rem;
+}
+
+.gym_-details-card-second-div p{
+    margin-top:2rem;
+    margin-bottom:2rem;
+    font-family:"DM Sans";
+    color: darkgrey;
+}
+
+.gym_-details-card-second-div a{
+    text-decoration: none;
+    margin-top:2rem;
+    font-family:"DM Sans";
+    color:#D76810;
+    font-weight: 700;
+}
+.gym_-details-card-second-div a::after{
+    content: " ->";
+}
