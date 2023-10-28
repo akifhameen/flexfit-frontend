@@ -2,6 +2,7 @@ import React from 'react'
 import HeroSection from '../components/heroSection'
 import Navbar from '../components/navbar'
 import GymDetails from '../components/gymDetails'
+import ChosseUs from '../components/chooseUs'
 import './homePage.css'
 
 
@@ -14,6 +15,9 @@ const HomePage = () => {
       </div>
       <div class="app__gymDetails">
         <GymDetails/>
+      </div>
+      <div class="app__chooseUs">
+        <ChosseUs/>
       </div>
     </div>
   )
