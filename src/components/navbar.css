@@ -31,6 +31,7 @@
 
 .nav__navigation li:hover{
     color: #D76810;
+    cursor: pointer;
 }
 .nav__form-btn button{
     padding-top:0.5rem;
@@ -41,4 +42,5 @@
     color: white;
     background-color: #D76810;
     border: none;
+    cursor: pointer;
 }
