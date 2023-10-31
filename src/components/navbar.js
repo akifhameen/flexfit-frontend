@@ -1,8 +1,18 @@
 import React, { useState } from 'react'
 import './navbar.css'
+import { useNavigate } from 'react-router-dom'
 
 const Navbar = () => {
-    const [color , setColor] = useState('white')
+
+const navigate = useNavigate();
+const [color , setColor] = useState('white')
+
+const navigateSignIn = () => {
+    navigate('/signin');
+}
+const navigateSignUp = () => {
+    navigate('/signup');
+}        
   return (
     <div class="nav__main-div">
         <div class="nav__name-div">
@@ -18,8 +28,8 @@ const Navbar = () => {
             </ul>
         </div>
         <div class="nav__form-btn" style={{color:color}}>
-            <button>Sign In</button>
-            <button>Sign Up</button>
+            <button onClick={navigateSignIn}>Sign In</button>
+            <button onClick={navigateSignUp}>Sign Up</button>
         </div>
     </div>
   )

@@ -1,10 +1,11 @@
 import React from 'react'
 import HomePage from './pages/homePage'
+import Navigation from './navigation'
 
 
 const App = () => {
   return (
-    <HomePage/>
+    <Navigation/>
   )
 }
 
