@@ -1,5 +1,5 @@
 import React from "react";
-import "./classdetails.css";
+import "./classDetails.css";
 import trainer from "../assets/images/male.png";
 
 const HireTrainer = () => {

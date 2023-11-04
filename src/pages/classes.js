@@ -1,10 +1,10 @@
-import React from "react";
-import "./classes.css";
-import ClassHero from "../classes/classHero";
-import ClassDetails from "../classes/classdetails";
-import HireTrainer from "../classes/hiretrainer";
-import Footer from "../components/footer";
-import Packages from "../components/packagesDetails";
+import React from 'react';
+import './classes.css';
+import ClassHero from '../classes/classHero';
+import ClassDetails from '../classes/classDetails';
+import HireTrainer from '../classes/hireTrainer';
+import Footer from '../components/footer';
+import Packages from '../components/packagesDetails';
 
 const Classes = () => {
   return (
@@ -12,16 +12,16 @@ const Classes = () => {
       <div>
         <ClassHero />
       </div>
-      <div class="class__details-section">
+      <div class='class__details-section'>
         <ClassDetails />
       </div>
-      <div class="class_trainer-section">
+      <div class='class_trainer-section'>
         <HireTrainer />
       </div>
-      <div class="class_packages-section">
+      <div class='class_packages-section'>
         <Packages />
       </div>
-      <div class="class_footer-section">
+      <div class='class_footer-section'>
         <Footer />
       </div>
     </div>

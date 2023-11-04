@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import "./signIn.css";
-import weights from "../assets/images/weights.png";
+import React, { useState } from 'react';
+import './signIn.css';
+import weights from '../assets/images/weights.png';
 
 const SignIn = () => {
   //     const[error ,setError] = useState('');
@@ -51,32 +51,32 @@ const SignIn = () => {
 
   //     const {email,password} = userInfo
   return (
-    <div class="signin__main-div">
-      <div class="signin__form-div">
+    <div class='signin__main-div'>
+      <div class='signin__form-div'>
         <img src={weights} />
-        <p class="p1">Good to see you again !</p>
-        <p class="p2">Sign In</p>
+        <p class='p1'>Good to see you again !</p>
+        <p class='p2'>Sign In</p>
         <form>
           <input
-            class="inputEmail"
-            autoCapitalize="none"
-            type="email"
-            name="name"
-            placeholder="Email"
+            class='inputEmail'
+            autoCapitalize='none'
+            type='email'
+            name='name'
+            placeholder='Email'
             required
           />
           <input
-            type="password"
-            name="password"
-            placeholder="Password"
+            type='password'
+            name='password'
+            placeholder='Password'
             required
           />
           <button>Submit</button>
         </form>
-        <p class="p3">
-          Don't have an account ?{" "}
+        <p class='p3'>
+          Don't have an account ?{' '}
           <span>
-            <a href="/signUp">Sign Up</a>
+            <a href='/signUp'>Sign Up</a>
           </span>
         </p>
       </div>

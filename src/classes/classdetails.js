@@ -1,5 +1,5 @@
 import React from "react";
-import "./classdetails.css";
+import "./classDetails.css";
 import class_img from "../assets/images/tutorial.png";
 
 const ClassDetails = () => {
