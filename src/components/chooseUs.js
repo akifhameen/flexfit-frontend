@@ -10,9 +10,11 @@ const ChosseUs = () => {
         <p class='p1'>Why Choose Us</p>
         <p class='p2'>A Complete Gym & Easy Access to The Place</p>
         <p class='p3'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris
+          FlexFit Gym is your all-inclusive fitness destination, offering a wide
+          range of amenities and services. We also provide easy access to our
+          facility, ensuring that your fitness goals are within reach. Join us
+          for a comprehensive fitness experience that combines convenience with
+          excellence.
         </p>
         <div class='percentage'>
           <div class='percentage-div1'>

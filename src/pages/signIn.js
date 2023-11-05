@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './signIn.css';
 import weights from '../assets/images/weights.png';
 
-const SignIn = () => {
+const SignIn = (props) => {
   return (
     <div class='signin__main-div'>
       <div class='signin__form-div'>
@@ -24,7 +24,13 @@ const SignIn = () => {
             placeholder='Password'
             required
           />
-          <button>Submit</button>
+          <button
+            onClick={() => {
+              props.setIsAuth(true);
+            }}
+          >
+            Submit
+          </button>
         </form>
         <p class='p3'>
           Don't have an account ?{' '}

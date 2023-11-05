@@ -6,19 +6,24 @@ import AboutUs from './pages/aboutUs';
 import Classes from './pages/classes';
 import Store from './pages/store';
 import Blogs from './pages/blogs';
+import Navbar from './components/navBar';
+import { useState } from 'react';
 const Navigation = () => {
+  const [isAuth, setIsAuth] = useState(false);
   return (
     <div>
       <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/signIn' element={<SignIn />} />
-          <Route path='/signUp' element={<SignUp />} />
-          <Route path='/aboutUs' element={<AboutUs />} />
-          <Route path='/classes' element={<Classes />} />
-          <Route path='/store' element={<Store />} />
-          <Route path='/blogs' element={<Blogs />} />
-        </Routes>
+        <Navbar isAuth={isAuth}>
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/signIn' element={<SignIn setIsAuth={setIsAuth} />} />
+            <Route path='/signUp' element={<SignUp />} />
+            <Route path='/aboutUs' element={<AboutUs />} />
+            <Route path='/classes' element={<Classes />} />
+            <Route path='/store' element={<Store />} />
+            <Route path='/blogs' element={<Blogs />} />
+          </Routes>
+        </Navbar>
       </BrowserRouter>
     </div>
   );

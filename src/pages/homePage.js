@@ -7,13 +7,16 @@ import NewsLetter from '../components/newsLetter';
 import Footer from '../components/footer';
 import './homePage.css';
 import PackagesDetails from '../components/packagesDetails';
+import NewsAlert from '../components/newsAlert';
 
 const HomePage = () => {
   return (
     <div>
       <div class='app__heroBanner'>
-        <Navbar />
         <HeroSection />
+      </div>
+      <div class='app__newsAlert'>
+        <NewsAlert />
       </div>
       <div class='app__gymDetails'>
         <GymDetails />
@@ -27,9 +30,9 @@ const HomePage = () => {
       <div class='app__newsLetter'>
         <NewsLetter />
       </div>
-      <div class='app__footer'>
+      {/* <div class='app__footer'>
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 };

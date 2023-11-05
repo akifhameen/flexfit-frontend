@@ -18,12 +18,6 @@ const Classes = () => {
       <div class='class_trainer-section'>
         <HireTrainer />
       </div>
-      <div class='class_packages-section'>
-        <Packages />
-      </div>
-      <div class='class_footer-section'>
-        <Footer />
-      </div>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import dumbell from '../assets/images/dumbell.png';
 import gym from '../assets/images/gym.png';
 import treadmill from '../assets/images/treadmill.png';
@@ -8,8 +7,13 @@ import workout2 from '../assets/images/workout2.jpg';
 import exercise from '../assets/images/exercise.png';
 import check from '../assets/images/check.png';
 import './gymDetails.css';
+import { useNavigate } from 'react-router-dom';
 
 const GymDetails = () => {
+  const navigate = useNavigate();
+  const navigateAboutUs = () => {
+    navigate('/aboutUs');
+  };
   return (
     <div class='gym__main-div'>
       <div class='gym__details'>
@@ -20,8 +24,9 @@ const GymDetails = () => {
           </div>
           <div class='gym_-details-card-second-div'>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-              id dolorem deleniti numquam quaerat.
+              FlexFit Gym , Your Strength Community. Elevate your fitness
+              journey with our premier trainers and top-notch facilities. Join
+              us and experience the difference.
             </p>
             <a href='#'>Learn more</a>
           </div>
@@ -33,8 +38,8 @@ const GymDetails = () => {
           </div>
           <div class='gym_-details-card-second-div'>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-              id dolorem deleniti numquam quaerat.
+              FlexFit Gym offers a comfortable and welcoming environment,
+              ensuring that you feel at ease while pursuing your fitness goals.
             </p>
             <a href='#'>Learn more</a>
           </div>
@@ -46,8 +51,9 @@ const GymDetails = () => {
           </div>
           <div class='gym_-details-card-second-div'>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-              id dolorem deleniti numquam quaerat.
+              At FlexFit Gym, our highly skilled trainers are dedicated to
+              maximizing your fitness potential.With expertise and personalized
+              guidance...
             </p>
             <a href='#'>Learn more</a>
           </div>
@@ -71,9 +77,10 @@ const GymDetails = () => {
           <p class='p1'>About FlexFit</p>
           <p class='p2'>A Comfortable Place With High Class Equipment</p>
           <p class='p3'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris
+            FlexFit Gym is a haven of comfort and excellence, where you can work
+            out in a welcoming environment. Our high-class equipment is designed
+            to optimize your fitness routine. With a focus on comfort, we ensure
+            you can exercise with ease, making every visit a pleasure.
           </p>
           <div class='p4'>
             <img src={check} />
@@ -87,7 +94,9 @@ const GymDetails = () => {
             <img src={check} />
             <p>Most Complete Gym Equipment & Sport Class</p>
           </div>
-          <button class='btn'>More About Us</button>
+          <button class='btn' onClick={navigateAboutUs}>
+            More About Us
+          </button>
         </div>
       </div>
     </div>

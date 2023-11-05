@@ -3,7 +3,7 @@
     background-size:cover;
     background-attachment: fixed;
     width:100%;
-    height:100vh;
+    height:auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,6 +16,9 @@
     width: 25rem;
     height:40rem;
     padding: 1rem;
+    margin-top:8rem;
+    margin-bottom:6rem;
+
 }
 .signup__form-div .p1{
     text-align: center;

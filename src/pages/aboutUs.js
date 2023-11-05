@@ -21,9 +21,6 @@ const AboutUs = () => {
       <div class='trainer-contact'>
         <ContactUs />
       </div>
-      <div class='trainer-footer'>
-        <Footer />
-      </div>
     </div>
   );
 };

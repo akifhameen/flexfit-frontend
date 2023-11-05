@@ -10,9 +10,8 @@
 .store__hero_main-div .store__hero_second-div{
     display: flex;
     justify-content: center;
-    align-items:flex-start;
+    align-items:center;
     height:100%;
-    margin-top:7rem;
 }
 .store__hero_second-div p{
   color: white;

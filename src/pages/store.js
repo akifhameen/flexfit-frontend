@@ -17,9 +17,6 @@ const Store = () => {
       <div class='store__Details-second-div'>
         <StoreEquipment />
       </div>
-      <div class='store__Details-third-div'>
-        <Footer />
-      </div>
     </div>
   );
 };

@@ -13,9 +13,6 @@ const Blogs = () => {
       <div class='blogs__details-section'>
         <BlogsDetails />
       </div>
-      <div class='blogs__footer-section'>
-        <Footer />
-      </div>
     </div>
   );
 };

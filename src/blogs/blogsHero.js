@@ -6,7 +6,6 @@ const BlogsHero = () => {
   return (
     <div>
       <div class='blogs__hero-main-div'>
-        <Navbar />
         <div class='blogs__second-hero-div'>
           <p>Blogs And Articles</p>
         </div>

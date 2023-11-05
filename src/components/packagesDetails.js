@@ -9,26 +9,26 @@ function PackagesDetails() {
         <p class='details-p1'>Our Pricing</p>
         <p class='details-p2'>Affordable Pricing Plans For You</p>
         <p class='details-p3'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco labori
+          FlexFit Gym offers affordable pricing plans, making fitness accessible
+          to all. Our packages cater to various budgets, so you can choose the
+          one that suits you best.
         </p>
         <div class='details-div'>
           <div class='check-P'>
             <img src={check} />
-            <p>Duis aute irure dolor in reprehenderit</p>
+            <p>Limited flexibility in membership options.</p>
           </div>
           <div class='check-P'>
             <img src={check} />
-            <p>Quis nostrud exercitation ullamco laboris</p>
+            <p>Potential overcrowding during peak hours.</p>
           </div>
           <div class='check-P'>
             <img src={check} />
-            <p>Voluptatem accusantium doloremque</p>
+            <p>Package restrictions on certain classes or services.</p>
           </div>
           <div class='check-P'>
             <img src={check} />
-            <p>Numquam eius modi tempora incidunt</p>
+            <p>Some amenities may not be included in lower-tier packages.</p>
           </div>
         </div>
         <button>All Pricing</button>

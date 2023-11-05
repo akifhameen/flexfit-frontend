@@ -18,14 +18,11 @@ const Footer = () => {
         <p class='p1'>
           Flex<span>Fit</span>
         </p>
-        <p class='p2'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod
-        </p>
+        <p class='p2'>The Most Complete Gym To Work Out</p>
         <div class='sub-div'>
           <div class='sub-div-area'>
             <FiMapPin size={20} fill='#D76810' />
-            <p>Jl. Raya Kuta No.70, Kuta</p>
+            <p>No. 36, De Kretser Place, Bambalapitiya Colombo 04</p>
           </div>
           <div class='sub-div-area'>
             <FiMail size={20} fill='#D76810' />
@@ -33,7 +30,7 @@ const Footer = () => {
           </div>
           <div class='sub-div-area'>
             <FiPhone size={20} fill='#D76810' />
-            <p>(+62)546 158 361</p>
+            <p>tel:+94114777888</p>
           </div>
         </div>
       </div>
@@ -42,23 +39,23 @@ const Footer = () => {
         <p class='p1'>Other Pages</p>
         <div class='sub-div-area'>
           <FiChevronRight size={20} stroke='#D76810' />
-          <a>Home</a>
+          <a href='/'>Home</a>
         </div>
         <div class='sub-div-area'>
           <FiChevronRight size={20} stroke='#D76810' />
-          <a>About us</a>
+          <a href='/aboutUs'>About us</a>
         </div>
         <div class='sub-div-area'>
           <FiChevronRight size={20} stroke='#D76810' />
-          <a>Classes</a>
+          <a href='/classes'>Classes</a>
         </div>
         <div class='sub-div-area'>
           <FiChevronRight size={20} stroke='#D76810' />
-          <a>Online shop</a>
+          <a href='/store'>Online shop</a>
         </div>
         <div class='sub-div-area'>
           <FiChevronRight size={20} stroke='#D76810' />
-          <a>Blogs and Articles</a>
+          <a href='/blogs'>Blogs and Articles</a>
         </div>
       </div>
 
