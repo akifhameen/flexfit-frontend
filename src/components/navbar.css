@@ -47,11 +47,14 @@
     background-color: #D76810;
     border: none;
     cursor: pointer;
+    width:6.5rem;
+    height:2.2rem;
 }
 .nav__form-btn2{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 
 }
 .nav__form-btn2 button{
@@ -64,6 +67,9 @@
     background-color: #D76810;
     border: none;
     cursor: pointer;
+    width:6.5rem;
+    height:2.2rem;
+    margin-left: 0;
 }
 .nav__form-btn2 p{
     color: #D76810;

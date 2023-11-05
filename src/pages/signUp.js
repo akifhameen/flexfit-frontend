@@ -6,7 +6,7 @@ const SignUp = () => {
   return (
     <div class='signup__main-div'>
       <div class='signup__form-div'>
-        <img src={weights} />
+        <img src={weights} alt='image' />
         <p class='p1'>Wellcome !</p>
         <p class='p2'>Sign Up</p>
         <form>

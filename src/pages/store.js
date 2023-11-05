@@ -3,7 +3,6 @@ import StoreHero from '../store/storeHero';
 import StoreDetails from '../store/storeSupplements';
 import './store.css';
 import StoreEquipment from '../store/storeEquipment';
-import Footer from '../components/footer';
 
 const Store = () => {
   return (

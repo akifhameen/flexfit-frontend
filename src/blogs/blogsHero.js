@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/navBar';
 import './blogsHero.css';
 
 const BlogsHero = () => {

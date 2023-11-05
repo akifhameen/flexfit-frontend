@@ -6,7 +6,7 @@ const SignIn = (props) => {
   return (
     <div class='signin__main-div'>
       <div class='signin__form-div'>
-        <img src={weights} />
+        <img src={weights} alt='image' />
         <p class='p1'>Good to see you again !</p>
         <p class='p2'>Sign In</p>
         <form>

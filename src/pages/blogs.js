@@ -2,7 +2,6 @@ import React from 'react';
 import BlogsHero from '../blogs/blogsHero';
 import BlogsDetails from '../blogs/blogsDetails';
 import './blogs.css';
-import Footer from '../components/footer';
 
 const Blogs = () => {
   return (

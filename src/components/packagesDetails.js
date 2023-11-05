@@ -15,19 +15,19 @@ function PackagesDetails() {
         </p>
         <div class='details-div'>
           <div class='check-P'>
-            <img src={check} />
+            <img src={check} alt='image' />
             <p>Limited flexibility in membership options.</p>
           </div>
           <div class='check-P'>
-            <img src={check} />
+            <img src={check} alt='image' />
             <p>Potential overcrowding during peak hours.</p>
           </div>
           <div class='check-P'>
-            <img src={check} />
+            <img src={check} alt='image' />
             <p>Package restrictions on certain classes or services.</p>
           </div>
           <div class='check-P'>
-            <img src={check} />
+            <img src={check} alt='image' />
             <p>Some amenities may not be included in lower-tier packages.</p>
           </div>
         </div>
@@ -41,23 +41,23 @@ function PackagesDetails() {
         <p>-----------------------------</p>
         <div class='package-div'>
           <div class='check-P'>
-            <img src={check} />
+            <img src={check} alt='image' />
             <p>Get All Courses</p>
           </div>
           <div class='check-P'>
-            <img src={check} />
+            <img src={check} alt='image' />
             <p>Group Classes</p>
           </div>
           <div class='check-P'>
-            <img src={check} />
+            <img src={check} alt='image' />
             <p>Personal Training</p>
           </div>
           <div class='check-P'>
-            <img src={check} />
+            <img src={check} alt='image' />
             <p>Free Soft Drinks</p>
           </div>
           <div class='check-P'>
-            <img src={check} />
+            <img src={check} alt='image' />
             <p>Free Four Towels</p>
           </div>
         </div>
@@ -71,19 +71,19 @@ function PackagesDetails() {
         <p>-----------------------------</p>
         <div class='second-div'>
           <div class='check-P1'>
-            <img src={check} />
+            <img src={check} alt='image' />
             <p>Group Classes</p>
           </div>
           <div class='check-P1'>
-            <img src={check} />
+            <img src={check} alt='image' />
             <p>Free Soft Drink</p>
           </div>
           <div class='check-P1'>
-            <img src={check} />
+            <img src={check} alt='image' />
             <p>Personal Training</p>
           </div>
           <div class='check-P1'>
-            <img src={check} />
+            <img src={check} alt='image' />
             <p>Free Towel</p>
           </div>
         </div>
