@@ -41,6 +41,7 @@
 .sub-div-area a{
     color: white;
     margin-left: 1rem;
+    text-decoration: none;
 }
 .sub-div-area a:hover{
     color:#D76810;
