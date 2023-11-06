@@ -3,18 +3,19 @@ import './navBar.css';
 import Footer from '../components/footer';
 import { useNavigate } from 'react-router-dom';
 import { useLogin } from '../context/authContext';
+import { Link } from 'react-router-dom';
 
 const Navbar = (props) => {
   const navigate = useNavigate();
   const { isAuth } = useLogin();
-  const [isAuth1, setIsAuth1] = useState(false);
+  // const [isAuth1, setIsAuth1] = useState(false);
   const [role, setRole] = useState('admin');
+  // useEffect(() => {
+  //   const test1 = localStorage.getItem('isAuth') === true;
+  //   setIsAuth1(test1);
+  // }, []);
 
-  useEffect(() => {
-    setIsAuth1(isAuth);
-    localStorage.setItem('auth', isAuth);
-  }, [isAuth]);
-  console.log(isAuth);
+  console.log('nav bar ', isAuth);
 
   const navigateSignIn = () => {
     navigate('/signIn');
@@ -40,39 +41,39 @@ const Navbar = (props) => {
         <div class='nav__navigation'>
           <ul>
             <li>
-              <a href='/'>Home</a>
+              <Link to='/'>Home</Link>
             </li>
 
             <li>
-              <a href='/aboutUs'>About us</a>
+              <Link to='/aboutUs'>About us</Link>
             </li>
             <li>
-              <a href='/classes'>Classes</a>
+              <Link to='/classes'>Classes</Link>
             </li>
             <li>
-              <a href='/store'>Online shop</a>
+              <Link to='/store'>Online shop</Link>
             </li>
             <li>
-              <a href='/blogs'>Blogs and Articles</a>
+              <Link to='/blogs'>Blogs and Articles</Link>
             </li>
           </ul>
         </div>
         <div class='nav__form-btn'>
-          {isAuth1 === true && role === 'admin' && (
+          {isAuth === true && role === 'admin' && (
             <div class='nav__form-btn2'>
               <p>Welcome Admin</p>
               <button onClick={navigateAdmin}>Admin Panel</button>
               <button>Log out</button>
             </div>
           )}
-          {isAuth1 === true && role === 'trainer' && (
+          {isAuth === true && role === 'trainer' && (
             <div class='nav__form-btn2'>
               <p>Welcome Trainer</p>
               <button onClick={navigateTrainer}>Trainer Panel</button>
               <button>Log out</button>
             </div>
           )}
-          {isAuth1 === false || (
+          {isAuth ? null : (
             <div>
               <button onClick={navigateSignIn}>Sign In</button>
               <button onClick={navigateSignUp}>Sign Up</button>

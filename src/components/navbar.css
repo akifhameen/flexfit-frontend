@@ -29,7 +29,7 @@
     font-size:1rem;
     
 }
-.nav__navigation a {
+.nav__navigation a , .nav__navigation Link {
     text-decoration: none;
     color: white;
 }

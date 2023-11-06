@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css';
+import { Link } from 'react-router-dom';
 import {
   FiMapPin,
   FiChevronRight,
@@ -39,23 +40,23 @@ const Footer = () => {
         <p class='p1'>Other Pages</p>
         <div class='sub-div-area'>
           <FiChevronRight size={20} stroke='#D76810' />
-          <a href='/'>Home</a>
+          <Link to='/'>Home</Link>
         </div>
         <div class='sub-div-area'>
           <FiChevronRight size={20} stroke='#D76810' />
-          <a href='/aboutUs'>About us</a>
+          <Link to='/aboutUs'>About us</Link>
         </div>
         <div class='sub-div-area'>
           <FiChevronRight size={20} stroke='#D76810' />
-          <a href='/classes'>Classes</a>
+          <Link to='/classes'>Classes</Link>
         </div>
         <div class='sub-div-area'>
           <FiChevronRight size={20} stroke='#D76810' />
-          <a href='/store'>Online shop</a>
+          <Link to='/store'>Online shop</Link>
         </div>
         <div class='sub-div-area'>
           <FiChevronRight size={20} stroke='#D76810' />
-          <a href='/blogs'>Blogs and Articles</a>
+          <Link to='/blogs'>Blogs and Articles</Link>
         </div>
       </div>
 

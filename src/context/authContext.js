@@ -4,9 +4,8 @@ import { createContext } from 'react';
 const LoginContext = createContext();
 
 const LoginProvider = ({ children }) => {
-  const [isAuth, setIsAuth] = useState('');
-  const test = localStorage.getItem('auth');
-  console.log('contexst side auth :', test);
+  const [isAuth, setIsAuth] = useState(false);
+  console.log('contexst side auth :', isAuth);
 
   return (
     <LoginContext.Provider value={{ isAuth, setIsAuth }}>
