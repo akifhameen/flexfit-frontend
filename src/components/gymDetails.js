@@ -8,6 +8,7 @@ import exercise from '../assets/images/exercise.png';
 import check from '../assets/images/check.png';
 import './gymDetails.css';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const GymDetails = () => {
   const navigate = useNavigate();
@@ -28,7 +29,7 @@ const GymDetails = () => {
               journey with our premier trainers and top-notch facilities. Join
               us and experience the difference.
             </p>
-            <a href='#'>Learn more</a>
+            <Link href='#'>Learn more</Link>
           </div>
         </div>
         <div class='gym__details-card'>
@@ -41,7 +42,7 @@ const GymDetails = () => {
               FlexFit Gym offers a comfortable and welcoming environment,
               ensuring that you feel at ease while pursuing your fitness goals.
             </p>
-            <a href='#'>Learn more</a>
+            <Link href='#'>Learn more</Link>
           </div>
         </div>
         <div class='gym__details-card'>
@@ -55,7 +56,7 @@ const GymDetails = () => {
               maximizing your fitness potential.With expertise and personalized
               guidance...
             </p>
-            <a href='#'>Learn more</a>
+            <Link href='#'>Learn more</Link>
           </div>
         </div>
       </div>

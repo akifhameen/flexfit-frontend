@@ -1,6 +1,7 @@
 import React from 'react';
 import weights from '../assets/images/weights.png';
 import './signUp.css';
+import { Link } from 'react-router-dom';
 
 const SignUp = () => {
   return (
@@ -38,7 +39,7 @@ const SignUp = () => {
         <p class='p3'>
           Already have an account ?{' '}
           <span>
-            <a href='/signIn'>Sign In</a>
+            <Link href='/signIn'>Sign In</Link>
           </span>
         </p>
       </div>

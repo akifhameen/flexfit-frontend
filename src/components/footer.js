@@ -64,23 +64,23 @@ const Footer = () => {
         <p class='p1'>Quick Links</p>
         <div class='sub-div-area'>
           <FiChevronRight size={20} stroke='#D76810' />
-          <a>Privacy Policy</a>
+          <Link>Privacy Policy</Link>
         </div>
         <div class='sub-div-area'>
           <FiChevronRight size={20} stroke='#D76810' />
-          <a>Term Of Service</a>
+          <Link>Term Of Service</Link>
         </div>
         <div class='sub-div-area'>
           <FiChevronRight size={20} stroke='#D76810' />
-          <a>Disclaimer</a>
+          <Link>Disclaimer</Link>
         </div>
         <div class='sub-div-area'>
           <FiChevronRight size={20} stroke='#D76810' />
-          <a>Credits</a>
+          <Link>Credits</Link>
         </div>
         <div class='sub-div-area'>
           <FiChevronRight size={20} stroke='#D76810' />
-          <a>FAQ</a>
+          <Link>FAQ</Link>
         </div>
       </div>
       <div class='footer__fourth-div'>

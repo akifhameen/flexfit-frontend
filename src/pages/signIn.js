@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './signIn.css';
 import weights from '../assets/images/weights.png';
 import { useLogin } from '../context/authContext';
+import { Link } from 'react-router-dom';
 
 const SignIn = (props) => {
   const { setIsAuth } = useLogin();
@@ -38,7 +39,7 @@ const SignIn = (props) => {
         <p class='p3'>
           Don't have an account ?{' '}
           <span>
-            <a href='/signUp'>Sign Up</a>
+            <Link href='/signUp'>Sign Up</Link>
           </span>
         </p>
       </div>

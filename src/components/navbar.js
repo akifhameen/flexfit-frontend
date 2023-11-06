@@ -8,13 +8,7 @@ import { Link } from 'react-router-dom';
 const Navbar = (props) => {
   const navigate = useNavigate();
   const { isAuth } = useLogin();
-  // const [isAuth1, setIsAuth1] = useState(false);
-  const [role, setRole] = useState('admin');
-  // useEffect(() => {
-  //   const test1 = localStorage.getItem('isAuth') === true;
-  //   setIsAuth1(test1);
-  // }, []);
-
+  const [role, setRole] = useState('member');
   console.log('nav bar ', isAuth);
 
   const navigateSignIn = () => {
@@ -70,6 +64,12 @@ const Navbar = (props) => {
             <div class='nav__form-btn2'>
               <p>Welcome Trainer</p>
               <button onClick={navigateTrainer}>Trainer Panel</button>
+              <button>Log out</button>
+            </div>
+          )}
+          {isAuth === true && role === 'member' && (
+            <div class='nav__form-btn2'>
+              <p>Welcome Member</p>
               <button>Log out</button>
             </div>
           )}
