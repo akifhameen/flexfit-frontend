@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import './signIn.css';
 import weights from '../assets/images/weights.png';
+import { useLogin } from '../context/authContext';
 
 const SignIn = (props) => {
+  const { setIsAuth } = useLogin();
+
   return (
     <div class='signin__main-div'>
       <div class='signin__form-div'>
@@ -26,7 +29,7 @@ const SignIn = (props) => {
           />
           <button
             onClick={() => {
-              props.setIsAuth(true);
+              setIsAuth(true);
             }}
           >
             Submit

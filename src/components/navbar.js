@@ -2,16 +2,19 @@ import React, { useEffect, useState } from 'react';
 import './navBar.css';
 import Footer from '../components/footer';
 import { useNavigate } from 'react-router-dom';
+import { useLogin } from '../context/authContext';
 
 const Navbar = (props) => {
   const navigate = useNavigate();
-  const [isAuth, setIsAuth] = useState('true');
+  const { isAuth } = useLogin();
+  const [isAuth1, setIsAuth1] = useState(false);
   const [role, setRole] = useState('admin');
-  // useEffect(() => {
-  //   setIsAuth(props.isAuth);
-  // }, [props.isAuth]);
 
-  console.log('isauauau 2', isAuth);
+  useEffect(() => {
+    setIsAuth1(isAuth);
+    localStorage.setItem('auth', isAuth);
+  }, [isAuth]);
+  console.log(isAuth);
 
   const navigateSignIn = () => {
     navigate('/signIn');
@@ -55,21 +58,21 @@ const Navbar = (props) => {
           </ul>
         </div>
         <div class='nav__form-btn'>
-          {isAuth === 'true' && role === 'admin' && (
+          {isAuth1 === true && role === 'admin' && (
             <div class='nav__form-btn2'>
               <p>Welcome Admin</p>
               <button onClick={navigateAdmin}>Admin Panel</button>
               <button>Log out</button>
             </div>
           )}
-          {isAuth === 'true' && role === 'trainer' && (
+          {isAuth1 === true && role === 'trainer' && (
             <div class='nav__form-btn2'>
               <p>Welcome Trainer</p>
               <button onClick={navigateTrainer}>Trainer Panel</button>
               <button>Log out</button>
             </div>
           )}
-          {isAuth === 'false' && (
+          {isAuth1 === false || (
             <div>
               <button onClick={navigateSignIn}>Sign In</button>
               <button onClick={navigateSignUp}>Sign Up</button>

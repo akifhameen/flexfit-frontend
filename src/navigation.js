@@ -14,14 +14,13 @@ import AddAdmin from './admin_details/addAdmin';
 import AddClass from './admin_details/addClass';
 import { useState } from 'react';
 const Navigation = () => {
-  const [isAuth, setIsAuth] = useState(false);
   return (
     <div>
       <BrowserRouter>
-        <Navbar isAuth={isAuth}>
+        <Navbar>
           <Routes>
             <Route path='/' element={<HomePage />} />
-            <Route path='/signIn' element={<SignIn setIsAuth={setIsAuth} />} />
+            <Route path='/signIn' element={<SignIn />} />
             <Route path='/signUp' element={<SignUp />} />
             <Route path='/aboutUs' element={<AboutUs />} />
             <Route path='/classes' element={<Classes />} />
