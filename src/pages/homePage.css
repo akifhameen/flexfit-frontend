@@ -23,7 +23,7 @@
     background-color: black;
     
 }
-.app__newsAlert{
+.app__newsAlert , .app__credits{
     position: absolute;
 }
 

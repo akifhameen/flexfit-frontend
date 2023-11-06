@@ -20,7 +20,7 @@ const StoreEquipment = () => {
       <div class='storeDetails__card-div'>
         {temp.map((index) => (
           <div class='storeDetails__card-item' key={index}>
-            <img src={item} />
+            <img src={item} alt='image' />
             <p class='storeDetails__p4'>Equipment</p>
             <p class='storeDetails__p5'>
               Gym equipment: Specialized tools and machines designed for various

@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/navBar';
 import './aboutHero.css';
 
 const AboutHero = () => {

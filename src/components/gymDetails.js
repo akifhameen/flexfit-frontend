@@ -8,6 +8,7 @@ import exercise from '../assets/images/exercise.png';
 import check from '../assets/images/check.png';
 import './gymDetails.css';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const GymDetails = () => {
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ const GymDetails = () => {
       <div class='gym__details'>
         <div class='gym__details-card'>
           <div class='gym_-details-card-first-div'>
-            <img src={dumbell} />
+            <img src={dumbell} alt='image' />
             <p>Complete Gym</p>
           </div>
           <div class='gym_-details-card-second-div'>
@@ -28,12 +29,12 @@ const GymDetails = () => {
               journey with our premier trainers and top-notch facilities. Join
               us and experience the difference.
             </p>
-            <a href='#'>Learn more</a>
+            <Link href='#'>Learn more</Link>
           </div>
         </div>
         <div class='gym__details-card'>
           <div class='gym_-details-card-first-div'>
-            <img src={gym} />
+            <img src={gym} alt='image' />
             <p>Comfort Place</p>
           </div>
           <div class='gym_-details-card-second-div'>
@@ -41,12 +42,12 @@ const GymDetails = () => {
               FlexFit Gym offers a comfortable and welcoming environment,
               ensuring that you feel at ease while pursuing your fitness goals.
             </p>
-            <a href='#'>Learn more</a>
+            <Link href='#'>Learn more</Link>
           </div>
         </div>
         <div class='gym__details-card'>
           <div class='gym_-details-card-first-div'>
-            <img src={treadmill} />
+            <img src={treadmill} alt='image' />
             <p>Skills Trainers</p>
           </div>
           <div class='gym_-details-card-second-div'>
@@ -55,7 +56,7 @@ const GymDetails = () => {
               maximizing your fitness potential.With expertise and personalized
               guidance...
             </p>
-            <a href='#'>Learn more</a>
+            <Link href='#'>Learn more</Link>
           </div>
         </div>
       </div>
@@ -64,11 +65,11 @@ const GymDetails = () => {
 
       <div class='gym__second-main-div'>
         <div class='gym__images'>
-          <img src={workout1} class='img1' />
+          <img src={workout1} class='img1' alt='image' />
           <div class='gym__images-info-main'>
-            <img src={workout2} class='img2' />
+            <img src={workout2} class='img2' alt='image' />
             <div class='gym__images-info'>
-              <img src={exercise} class='img3' />
+              <img src={exercise} class='img3' alt='image' />
               <p>We Are Trusted More Than 200 Customer</p>
             </div>
           </div>
@@ -83,15 +84,15 @@ const GymDetails = () => {
             you can exercise with ease, making every visit a pleasure.
           </p>
           <div class='p4'>
-            <img src={check} />
+            <img src={check} alt='image' />
             <p>Ready 24/7 Personal Trainer Service</p>
           </div>
           <div class='p4'>
-            <img src={check} />
+            <img src={check} alt='image' />
             <p>A Hygiene & Comfortable Gym & Studio</p>
           </div>
           <div class='p4'>
-            <img src={check} />
+            <img src={check} alt='image' />
             <p>Most Complete Gym Equipment & Sport Class</p>
           </div>
           <button class='btn' onClick={navigateAboutUs}>

@@ -22,7 +22,7 @@ const BlogsDetails = () => {
       <div class='blogs_card-div'>
         {temp.map((index) => (
           <div class='blogs_item-div' key={index}>
-            <img src={article_img} />
+            <img src={article_img} alt='image' />
             <p class='class-p4'>Gym & Fitness</p>
             <p class='class-p5'>
               Unlocking the Power of Functional Fitness: A Game-Changer for Your

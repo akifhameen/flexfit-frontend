@@ -3,8 +3,6 @@ import './classes.css';
 import ClassHero from '../classes/classHero';
 import ClassDetails from '../classes/classDetails';
 import HireTrainer from '../classes/hireTrainer';
-import Footer from '../components/footer';
-import Packages from '../components/packagesDetails';
 
 const Classes = () => {
   return (
