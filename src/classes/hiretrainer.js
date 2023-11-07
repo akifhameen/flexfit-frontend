@@ -2,7 +2,7 @@ import React from 'react';
 import './classDetails.css';
 import trainer from '../assets/images/male.png';
 
-const HireTrainer = () => {
+const hireTrainer = () => {
   const temp = [1, 2, 3];
   return (
     <div class='class__main-div'>
@@ -29,4 +29,4 @@ const HireTrainer = () => {
     </div>
   );
 };
-export default HireTrainer;
+export default hireTrainer;
