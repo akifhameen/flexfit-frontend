@@ -1,9 +1,30 @@
 import React from 'react';
 import './classDetails.css';
-import trainer from '../assets/images/male.png';
+import trainerimg from '../assets/images/male.png';
+import { getAllTrainers } from '../api/trainer';
+import { enrollOrQuitTrainer } from '../api/user';
 
 const HireTrainer = () => {
-  const temp = [1, 2, 3];
+  const { user } = useAuth();
+  const [trainers, setTrainers] = useState([]);
+  let isAuthenticated, plan, enrolledClassId;
+  if (user) {
+    ({ isAuthenticated, plan } = user);
+  }
+
+  const handleEnroll = async (trainerId) => {
+    if (isAuthenticated && plan === 'premium') {
+      enrolledClassId = await enrollOrQuitTrainer({
+        userId: user.id,
+        trainerId: trainerId,
+      });
+    }
+  };
+  useEffect(async () => {
+    const trainerList = await getAllTrainers();
+    setTrainers(trainerList);
+  }, [trainers]);
+
   return (
     <div class='class__main-div'>
       <p class='class-p1'>Our Trainers</p>
@@ -13,16 +34,18 @@ const HireTrainer = () => {
         fitness goals.
       </p>
       <div class='class_card-div'>
-        {temp.map((index) => (
-          <div class='class_item-div' key={index}>
-            <img src={trainer} alt='alt text'/>
+        {trainers.map((trainer) => (
+          <div class='class_item-div' key={trainer.userId}>
+            <img src={trainerimg} alt='alt text' />
             <p class='class-p4'>Yoga Trainer</p>
             <p class='class-p5'>
               Our gym trainers are highly experienced and committed to providing
               personalized guidance, helping you reach your fitness goals
               effectively and safely.
             </p>
-            <button>Hire Now</button>
+            <button onClick={() => handleEnroll(trainer.userId)}>
+              Hire Now
+            </button>
           </div>
         ))}
       </div>

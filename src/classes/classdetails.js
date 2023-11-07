@@ -10,16 +10,19 @@ const ClassDetails = () => {
   const [classes, setClasses] = useState([]);
   let isAuthenticated, plan, enrolledClassId;
   if (user) {
-    ({ isAuthenticated, role, plan } = user);
+    ({ isAuthenticated, plan } = user);
   }
 
-  const handleEnroll = async(classId) => {
+  const handleEnroll = async (classId) => {
     if (isAuthenticated && (plan === 'basic' || plan === 'premium')) {
-      enrolledClassId = await enrollOrQuitClass({ userId: user.id, classId: classId });
+      enrolledClassId = await enrollOrQuitClass({
+        userId: user.id,
+        classId: classId,
+      });
     }
-  }
+  };
 
-  useEffect(async() => {
+  useEffect(async () => {
     const classList = await getAllClasses();
     setClasses(classList);
   }, [classes]);
@@ -33,9 +36,9 @@ const ClassDetails = () => {
         interests.
       </p>
       <div class='class_card-div'>
-        {classes.map( eachClass => (
+        {classes.map((eachClass) => (
           <div class='class_item-div' key={eachClass.id}>
-            <img src={class_img} alt='alt text'/>
+            <img src={class_img} alt='alt text' />
             <p class='class-p4'>${eachClass.type}</p>
             <p class='class-p5'>
               Our bodybuilding classes are designed to help you sculpt and

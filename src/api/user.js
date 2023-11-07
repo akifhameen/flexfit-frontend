@@ -1,7 +1,7 @@
-import axios from "axios";
-const baseURL = 'http://localhost:5000'
+import axios from 'axios';
+const baseURL = 'http://localhost:5000';
 
-export const singin = async(loginData) => {
+export const singin = async (loginData) => {
   let response;
   try {
     response = await axios.post(`${baseURL}/users/signIn`, loginData);
@@ -11,7 +11,7 @@ export const singin = async(loginData) => {
   return response.data;
 };
 
-export const singup = async(signUpData) => {
+export const singup = async (signUpData) => {
   let response;
   try {
     response = await axios.post(`${baseURL}/users/signIn`, signUpData);
@@ -21,12 +21,28 @@ export const singup = async(signUpData) => {
   return response.data;
 };
 
-export const enrollOrQuitClass = async(enrollmentData) => {
+export const enrollOrQuitClass = async (enrollmentData) => {
   let response;
   try {
-    response = await axios.put(`${baseURL}/users/enrollOrQuitClass`, enrollmentData);
+    response = await axios.put(
+      `${baseURL}/users/enrollOrQuitClass`,
+      enrollmentData
+    );
   } catch (error) {
     console.log(error);
   }
   return response.data;
+};
+
+export const enrollOrQuitTrainer = async (enrollmentData) => {
+  let response;
+  try {
+    response = await axios.put(
+      `${baseURL}/users/enrollOrQuitTrainer`,
+      enrollmentData
+    );
+  } catch (error) {
+    console.log(error);
+  }
+  return response?.data;
 };
