@@ -5,12 +5,12 @@ import { getAllClasses } from '../api/class';
 import { useAuth } from '../authContext';
 import { enrollOrQuitClass } from '../api/user';
 
-const ClassDetails = () => {
+const classDetails = () => {
   const { user } = useAuth();
   const [classes, setClasses] = useState([]);
   let isAuthenticated, plan, enrolledClassId;
   if (user) {
-    ({ isAuthenticated, role, plan } = user);
+    ({ isAuthenticated, plan } = user);
   }
 
   const handleEnroll = async(classId) => {
@@ -50,4 +50,4 @@ const ClassDetails = () => {
   );
 };
 
-export default ClassDetails;
+export default classDetails;

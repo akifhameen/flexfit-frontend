@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../authContext.js';
 import { Link } from 'react-router-dom';
 
-const Navbar = (props) => {
+const NavBar = (props) => {
   const navigate = useNavigate();
   const { user, logout } = useAuth();
   let isAuthenticated, role;
@@ -90,4 +90,4 @@ const Navbar = (props) => {
     </div>
   );
 };
-export default Navbar;
+export default NavBar;

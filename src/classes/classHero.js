@@ -1,7 +1,7 @@
 import React from 'react';
 import './classHero.css';
 
-const ClassHero = () => {
+const classHero = () => {
   return (
     <div>
       <div class='Class__hero-main-div'>
@@ -13,4 +13,4 @@ const ClassHero = () => {
   );
 };
 
-export default ClassHero;
+export default classHero;
