@@ -1,6 +1,5 @@
 import React from 'react';
 import './classHero.css';
-import Navbar from '../components/navBar';
 
 const ClassHero = () => {
   return (

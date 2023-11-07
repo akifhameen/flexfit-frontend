@@ -1,13 +1,12 @@
 import React from 'react';
-import HomePage from './pages/homePage';
 import Navigation from './navigation';
-import LoginProvider from '../src/context/authContext';
+import AuthProvider from './authContext';
 
 const App = () => {
   return (
-    <LoginProvider>
+    <AuthProvider>
       <Navigation />
-    </LoginProvider>
+    </AuthProvider>
   );
 };
 

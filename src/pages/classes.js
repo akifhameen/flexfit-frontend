@@ -1,8 +1,8 @@
 import React from 'react';
 import './classes.css';
-import ClassHero from '../classes/classHero';
-import ClassDetails from '../classes/classDetails';
-import HireTrainer from '../classes/hireTrainer';
+import ClassHero from '../classes/classHero.js';
+import ClassDetails from '../classes/classDetails.js';
+import HireTrainer from '../classes/hireTrainer.js';
 
 const Classes = () => {
   return (

@@ -15,7 +15,7 @@ const HireTrainer = () => {
       <div class='class_card-div'>
         {temp.map((index) => (
           <div class='class_item-div' key={index}>
-            <img src={trainer} />
+            <img src={trainer} alt='alt text'/>
             <p class='class-p4'>Yoga Trainer</p>
             <p class='class-p5'>
               Our gym trainers are highly experienced and committed to providing

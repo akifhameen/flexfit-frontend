@@ -1,6 +1,5 @@
 import React from 'react';
 import './storeHero.css';
-import NavBar from '../components/navBar';
 
 const StoreHero = () => {
   return (

@@ -1,18 +1,17 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import HomePage from './pages/homePage';
-import SignIn from './pages/signIn';
-import SignUp from './pages/signUp';
-import AboutUs from './pages/aboutUs';
-import Classes from './pages/classes';
-import Store from './pages/store';
-import Blogs from './pages/blogs';
-import Navbar from './components/navBar';
-import AdminPage from './pages/adminPage';
-import TrainerPage from './pages/trainerPage';
-import AddTrainer from './admin_options/addTrainer';
-import AddAdmin from './admin_details/addAdmin';
-import AddClass from './admin_details/addClass';
-import { useState } from 'react';
+import HomePage from './pages/homePage.js';
+import SignIn from './pages/signIn.js';
+import SignUp from './pages/signUp.js';
+import AboutUs from './pages/aboutUs.js';
+import Classes from './pages/classes.js';
+import Store from './pages/store.js';
+import Blogs from './pages/blogs.js';
+import Navbar from './components/navBar.js';
+import AdminPage from './pages/adminPage.js';
+import TrainerPage from './pages/trainerPage.js';
+import AddTrainer from './admin_options/addTrainer.js';
+import AddAdmin from './admin_details/addAdmin.js';
+import AddClass from './admin_details/addClass.js';
 const Navigation = () => {
   return (
     <div>

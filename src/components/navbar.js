@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './navBar.css';
-import Footer from '../components/footer';
+import Footer from './footer.js';
 import { useNavigate } from 'react-router-dom';
-import { useLogin } from '../context/authContext';
+import { useAuth } from '../authContext.js';
 import { Link } from 'react-router-dom';
 
 const Navbar = (props) => {
   const navigate = useNavigate();
-  const { isAuth } = useLogin();
-  const [role, setRole] = useState('member');
-  console.log('nav bar ', isAuth);
+  const { user, logout } = useAuth();
+  let isAuthenticated, role;
+  if (user) {
+    ({ isAuthenticated, role } = user);
+  }
 
   const navigateSignIn = () => {
     navigate('/signIn');
@@ -53,27 +55,27 @@ const Navbar = (props) => {
           </ul>
         </div>
         <div class='nav__form-btn'>
-          {isAuth === true && role === 'admin' && (
+          {isAuthenticated && role === 'admin' && (
             <div class='nav__form-btn2'>
               <p>Welcome Admin</p>
               <button onClick={navigateAdmin}>Admin Panel</button>
-              <button>Log out</button>
+              <button onClick={() => logout()}>Log out</button>
             </div>
           )}
-          {isAuth === true && role === 'trainer' && (
+          {isAuthenticated && role === 'trainer' && (
             <div class='nav__form-btn2'>
               <p>Welcome Trainer</p>
               <button onClick={navigateTrainer}>Trainer Panel</button>
-              <button>Log out</button>
+              <button onClick={() => logout()}>Log out</button>
             </div>
           )}
-          {isAuth === true && role === 'member' && (
+          {isAuthenticated && role === 'member' && (
             <div class='nav__form-btn2'>
               <p>Welcome Member</p>
-              <button>Log out</button>
+              <button onClick={() => logout()}>Log out</button>
             </div>
           )}
-          {isAuth ? null : (
+          {isAuthenticated ? null : (
             <div>
               <button onClick={navigateSignIn}>Sign In</button>
               <button onClick={navigateSignUp}>Sign Up</button>

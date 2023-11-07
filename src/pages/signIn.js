@@ -1,11 +1,34 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './signIn.css';
 import weights from '../assets/images/weights.png';
-import { useLogin } from '../context/authContext';
+import { useAuth } from '../authContext';
 import { Link } from 'react-router-dom';
+import { singin } from '../api/user';
 
-const SignIn = (props) => {
-  const { setIsAuth } = useLogin();
+
+const SignIn = () => {
+  const navigate = useNavigate();
+  const { login } = useAuth();
+  const [loginData, setLoginData] = useState({ email: '', password: '' });
+
+
+  const handleSubmit = async(event) => {
+    event.preventDefault();
+    const user = await singin(loginData);
+    login(user);
+    if (user?.isAuthenticated) {
+      navigate('/');
+    }
+  };
+
+  const handleOnChange = (event) => {
+    event.preventDefault();
+    setLoginData({
+      ...loginData,
+      [event.target.name]: event.target.value
+    });
+  };
 
   return (
     <div class='signin__main-div'>
@@ -13,27 +36,27 @@ const SignIn = (props) => {
         <img src={weights} alt='image' />
         <p class='p1'>Good to see you again !</p>
         <p class='p2'>Sign In</p>
-        <form>
+        <form onSubmit={handleSubmit} method='POST'>
           <input
             class='inputEmail'
             autoCapitalize='none'
             type='email'
-            name='name'
+            name='email'
+            value={loginData.email}
+            onChange={handleOnChange}
             placeholder='Email'
             required
           />
           <input
             type='password'
             name='password'
+            value={loginData.password}
+            onChange={handleOnChange}
             placeholder='Password'
             required
           />
-          <button
-            onClick={() => {
-              setIsAuth(true);
-            }}
-          >
-            Submit
+          <button type="submit">
+            Sign In
           </button>
         </form>
         <p class='p3'>
